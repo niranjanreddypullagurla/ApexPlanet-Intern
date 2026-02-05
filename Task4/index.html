@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="logo">Niranjan Reddy</h2>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#todo">To-Do</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="about">
+        <h1>Hello, I am Niranjan Reddy Pullagurla</h1>
+        <p> I am a Computer Science Engineering student at Institute of Aeronautical Engineering (IARE). I am focused on building a solid foundation in programming, problem-solving, and modern software development practices. My interest lies in learning new technologies, understanding real-world applications, and developing efficient solutions.</p>
+
+        <div class="skills">
+             <span>Java</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>DBMS</span>
+        </div>
+    </section>
+
+   <section id="projects" class="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Task 1</h3>
+            <p>Study Plan Webpage </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Task 2</h3>
+            <p>Contact Form with validation and To-Do List. </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Task 3</h3>
+            <p>Interactive Quiz and API Integration </p>
+        </div>
+
+        
+    </div>
+   </section>
+
+   <section id="todo" class="todo-section">
+    <h2>My To-Do List</h2>
+    <div class="todo-box">
+        <input type="text" id="taskInput" placeholder="Enter a task">
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <ul id="taskList"></ul>
+   </section>
+
+
+   <section id="products" class="products-section">
+    <h2>Products</h2>
+
+    <div class="controls">
+        <select  id="categoryFilter" onchange="renderProducts()">
+            <option value="all">All Categories</option>
+            <option value="tech">Tech</option>
+            <option value="books">Books</option>
+        </select>
+
+        <select  id="sortPrice" onchange="renderProducts()">
+            <option value="default">Sort By</option>
+            <option value="low">Price : Low To High</option>
+            <option value="high">Price : High To Low</option>
+        </select>
+    </div>
+
+    <div id="productGrid" class="product-grid"></div>
+   </section>
+
+
+   <section id="contact" class="contact-section">
+  <h2>Contact Me</h2>
+  <p>Let’s connect! You can reach me here:</p>
+
+  <div class="contact-links">
+    <a href="mailto:niranjanreddypullagurla@gmail.com">Email</a>
+    <a href="https://github.com/niranjanreddypullagurla" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/niranjanreddy-pullagurla-193165378/" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+
+   <script src="script.js"></script>
+
+</body>
+</html>
