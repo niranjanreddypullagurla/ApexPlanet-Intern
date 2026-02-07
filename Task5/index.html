@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task-5 Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2 class="logo">Niranjan Reddy Pullagurla</h2>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#todo">To-Do</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="about">
+  <h1>About Me</h1>
+  <p>I am a Computer Science Engineering student passionate about building practical web applications using HTML, CSS, and JavaScript.</p>
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Java</span>
+    <span>Python</span>
+    <span>DBMS</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-list">
+    <div class="project-card">Task 1 - Study Plan Website</div>
+    <div class="project-card">Task 2 - Form Validation & To-Do</div>
+    <div class="project-card">Task 3 - Interactive Quiz</div>
+    <div class="project-card">Task 4 - Portfolio with JS</div>
+  </div>
+</section>
+
+<section id="todo">
+  <h2>To-Do App</h2>
+  <div class="todo-box">
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button id="addTask">Add Task</button>
+  </div>
+  <ul id="taskList"></ul>
+</section>
+
+<section id="products">
+  <h2>Products</h2>
+  <div class="controls">
+    <select id="category">
+      <option value="All">All</option>
+      <option value="Tech">Tech</option>
+      <option value="Books">Books</option>
+    </select>
+    <select id="sort">
+      <option value="Default">Sort By</option>
+      <option value="Low">Low to High</option>
+      <option value="High">High to Low</option>
+    </select>
+  </div>
+  <div class="product-list"></div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: niranjanreddypullagurla@gmail.com</p>
+  <p>GitHub: niranjanreddypullagurla</p>
+  <p>LinkedIn: niranjanreddy-pullagurla</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

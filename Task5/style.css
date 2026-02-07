@@ -1,0 +1,164 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#e3f2fd,#fce4ec);
+color:#333;
+}
+
+.navbar{
+background:linear-gradient(90deg,#1a73e8,#673ab7);
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+}
+.logo{
+    margin: 2px;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+background:white;
+max-width:900px;
+margin:50px auto;
+padding:50px 40px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+h1,h2{
+margin-bottom:20px;
+color:#333;
+}
+
+.skills span{
+display:inline-block;
+background:#e8ecff;
+color:#1a73e8;
+padding:8px 14px;
+border-radius:20px;
+margin:5px;
+font-weight:bold;
+}
+
+.project-list{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.project-card{
+background:linear-gradient(135deg,#bbdefb,#e1bee7);
+padding:20px;
+border-radius:10px;
+text-align:center;
+font-weight:bold;
+}
+
+.todo-box{
+display:flex;
+justify-content:center;
+gap:10px;
+margin-bottom:20px;
+}
+
+.todo-box input{
+padding:10px;
+width:250px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.todo-box button{
+padding:10px 20px;
+border:none;
+border-radius:6px;
+background:#1a73e8;
+color:white;
+cursor:pointer;
+}
+
+#taskList{
+list-style:none;
+max-width:400px;
+margin:auto;
+}
+
+#taskList li{
+background:#f3e5f5;
+margin:10px 0;
+padding:10px 15px;
+border-radius:6px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+#taskList button{
+background:red;
+color:white;
+border:none;
+border-radius:4px;
+padding:5px 10px;
+cursor:pointer;
+}
+
+.controls{
+display:flex;
+justify-content:center;
+gap:15px;
+margin-bottom:20px;
+}
+
+.controls select{
+padding:10px;
+border-radius:6px;
+}
+
+.product-list{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.product-card{
+background:linear-gradient(135deg,#c8e6c9,#fff9c4);
+padding:15px;
+border-radius:10px;
+text-align:center;
+font-weight:bold;
+}
+
+#contact p{
+margin:8px 0;
+}
+
+@media(max-width:600px){
+.navbar{
+flex-direction:column;
+gap:10px;
+}
+.todo-box{
+flex-direction:column;
+}
+.todo-box input{
+width:100%;
+}
+}
